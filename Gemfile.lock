@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    activesupport-broadcast_logger (2.0.0)
+    activesupport-broadcast_logger (2.0.1)
       activesupport (>= 5.2)
       activesupport-logger (~> 2.0, >= 2.0.1)
       logger (~> 1.6, >= 1.6.1)
