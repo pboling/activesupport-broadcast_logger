@@ -450,15 +450,17 @@ RSpec.describe ActiveSupport::BroadcastLogger do
     it "##{method} delegates keyword arguments to loggers" do
       logger = described_class.new(KwargsAcceptingLogger.new)
 
-      logger.public_send(method, "Hello", foo: "bar")
-      assert_equal [[level, "{:foo=>\"bar\"} Hello", nil]], logger.broadcasts.sole.adds
+      kwargs = {foo: "bar"}
+      logger.public_send(method, "Hello", **kwargs)
+      assert_equal [[level, "#{kwargs.inspect} Hello", nil]], logger.broadcasts.sole.adds
     end
   end
 
   it "#add delegates keyword arguments to the loggers" do
     logger = described_class.new(KwargsAcceptingLogger.new)
 
-    logger.add(Logger::INFO, "Hello", foo: "bar")
-    assert_equal [[Logger::INFO, "{:foo=>\"bar\"} Hello", nil]], logger.broadcasts.sole.adds
+    kwargs = {foo: "bar"}
+    logger.add(Logger::INFO, "Hello", **kwargs)
+    assert_equal [[Logger::INFO, "#{kwargs.inspect} Hello", nil]], logger.broadcasts.sole.adds
   end
 end

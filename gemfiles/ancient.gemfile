@@ -12,14 +12,20 @@ source "https://rubygems.org"
 # Thus we load the necessary development dependencies of the gem here.
 gem "version_gem", "~> 1.1", ">= 1.1.4"
 
+gem "activesupport", "< 7.0"
+gem "minitest"
 gem "rake"
 gem "rspec"
 gem "rspec-block_is_expected"
+gem "test-unit"
 
 # For debugging; casecmp is only available in Ruby 2.4+
 if RUBY_VERSION > "2.4" && ENV.fetch("DEBUG", "false").casecmp?("true")
   gem "byebug"
 end
+
+# For local development against old Ruby / old Rails.
+# gem "activesupport-logger", path: "../../activesupport-logger"
 
 # this gem, but without development dependencies from gemspec
 gem "activesupport-broadcast_logger", path: "../"

@@ -3,13 +3,13 @@
 # External Deps
 require "minitest"
 require "test-unit"
-require "active_support/core_ext/enumerable"
 
 # RSpec Configs
 require "config/byebug"
 require "config/rspec/rspec_block_is_expected"
 require "config/rspec/rspec_core"
 require "config/rspec/version_gem"
+require "config/rails_backports"
 
 # Last thing before loading this gem is to set up code coverage
 begin

@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    activesupport-broadcast_logger (1.0.0)
+    activesupport-broadcast_logger (2.0.0)
       activesupport (>= 5.2)
-      activesupport-logger (~> 1.0, >= 1.0.1)
+      activesupport-logger (~> 2.0, >= 2.0.0)
       logger (~> 1.6, >= 1.6.1)
       mutex_m (~> 0.1)
       rdoc (~> 6.8, >= 6.8.1)
@@ -13,7 +13,7 @@ PATH
 GEM
   remote: https://rubygems.org/
   specs:
-    activesupport (8.0.0)
+    activesupport (7.2.2)
       base64
       benchmark (>= 0.3)
       bigdecimal
@@ -25,9 +25,13 @@ GEM
       minitest (>= 5.1)
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
-      uri (>= 0.13.1)
-    activesupport-logger (1.0.1)
+    activesupport-logger (2.0.0)
       activesupport (>= 5.2)
+      backports (~> 3.25, >= 3.25.0)
+      logger (~> 1.6, >= 1.6.1)
+      mutex_m (~> 0.1)
+      rdoc (~> 6.8, >= 6.8.1)
+      stringio (>= 0.0.2)
       version_gem (~> 1.1, >= 1.1.4)
     ansi (1.5.0)
     appraisal (2.5.0)
@@ -89,7 +93,6 @@ GEM
     language_server-protocol (3.17.0.3)
     lint_roller (1.1.0)
     logger (1.6.1)
-    method_source (1.1.0)
     minitest (5.25.1)
     mutex_m (0.3.0)
     ostruct (0.6.1)
@@ -216,7 +219,6 @@ GEM
     tzinfo (2.0.6)
       concurrent-ruby (~> 1.0)
     unicode-display_width (2.6.0)
-    uri (1.0.2)
     version_gem (1.1.4)
     yard (0.9.37)
     yard-junk (0.0.10)
@@ -224,18 +226,18 @@ GEM
       ostruct
       rainbow
       yard
-    zeitwerk (2.7.1)
+    zeitwerk (2.6.18)
 
 PLATFORMS
   arm64-darwin-22
   arm64-darwin-23
+  arm64-darwin-24
 
 DEPENDENCIES
   activesupport-broadcast_logger!
   appraisal (~> 2.5)
   byebug (>= 11)
   kettle-soup-cover (~> 1.0, >= 1.0.4)
-  method_source (>= 1.1.0)
   minitest (~> 5.25, >= 5.25.1)
   rake (>= 13)
   reek (~> 6.3, >= 6.3.0)
