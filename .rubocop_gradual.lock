@@ -2,7 +2,7 @@
   "bin/bundle:247448467": [
     [64, 5, 20, "ThreadSafety/ClassInstanceVariable: Avoid class instance variables.", 2485198147]
   ],
-  "spec/activesupport/broadcast_logger_spec.rb:1619971482": [
+  "spec/activesupport/broadcast_logger_spec.rb:1414317146": [
     [3, 1, 45, "RSpec/SpecFilePathFormat: Spec path should end with `active_support/broadcast_logger*_spec.rb`.", 3293372633],
     [4, 3, 1568, "RSpec/LeakyConstantDeclaration: Stub class constant instead of declaring explicitly.", 110657397],
     [59, 7, 9, "RSpec/InstanceVariable: Avoid instance variables - use let, a method call, or a local variable (if possible).", 1964929597],
