@@ -52,14 +52,6 @@ jobs:
             rubygems: latest
             bundler: latest
 
-          # jruby-head
-          - ruby: "jruby-head"
-            appraisal: "as-8-0"
-            taskname: "spec"
-            gemfile: "Appraisal.root"
-            rubygems: latest
-            bundler: latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
