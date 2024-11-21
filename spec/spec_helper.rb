@@ -1,5 +1,10 @@
 # frozen_string_literal: true
 
+# Loading "active_support" normally here ensures this library will work,
+#   even if loaded after the vanilla ActiveSupport.
+# Unfortunately, it also results in 0% code coverage, because this gem gets loaded too early.
+# require "active_support"
+
 # External Deps
 require "minitest"
 require "test-unit"

@@ -10,6 +10,18 @@ PATH
       stringio (>= 0.0.2)
       version_gem (~> 1.1, >= 1.1.4)
 
+PATH
+  remote: /Users/pboling/src/my/activesupport-logger
+  specs:
+    activesupport-logger (2.0.0)
+      activesupport (>= 5.2)
+      backports (~> 3.25, >= 3.25.0)
+      logger (~> 1.6, >= 1.6.1)
+      mutex_m (~> 0.1)
+      rdoc (~> 6.8, >= 6.8.1)
+      stringio (>= 0.0.2)
+      version_gem (~> 1.1, >= 1.1.4)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -25,14 +37,6 @@ GEM
       minitest (>= 5.1)
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
-    activesupport-logger (2.0.0)
-      activesupport (>= 5.2)
-      backports (~> 3.25, >= 3.25.0)
-      logger (~> 1.6, >= 1.6.1)
-      mutex_m (~> 0.1)
-      rdoc (~> 6.8, >= 6.8.1)
-      stringio (>= 0.0.2)
-      version_gem (~> 1.1, >= 1.1.4)
     ansi (1.5.0)
     appraisal (2.5.0)
       bundler
@@ -235,6 +239,7 @@ PLATFORMS
 
 DEPENDENCIES
   activesupport-broadcast_logger!
+  activesupport-logger!
   appraisal (~> 2.5)
   byebug (>= 11)
   kettle-soup-cover (~> 1.0, >= 1.0.4)
