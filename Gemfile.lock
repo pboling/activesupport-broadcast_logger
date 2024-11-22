@@ -1,9 +1,9 @@
 PATH
   remote: .
   specs:
-    activesupport-broadcast_logger (2.0.1)
+    activesupport-broadcast_logger (2.0.2)
       activesupport (>= 5.2)
-      activesupport-logger (~> 2.0, >= 2.0.1)
+      activesupport-logger (~> 2.0, >= 2.0.2)
       logger (~> 1.6, >= 1.6.1)
       mutex_m (~> 0.1)
       rdoc (~> 6.8, >= 6.8.1)
@@ -26,7 +26,7 @@ GEM
       securerandom (>= 0.3)
       tzinfo (~> 2.0, >= 2.0.5)
       uri (>= 0.13.1)
-    activesupport-logger (2.0.1)
+    activesupport-logger (2.0.2)
       activesupport (>= 5.2)
       backports (~> 3.25, >= 3.25.0)
       logger (~> 1.6, >= 1.6.1)
@@ -242,6 +242,7 @@ DEPENDENCIES
   kettle-soup-cover (~> 1.0, >= 1.0.4)
   minitest (~> 5.25, >= 5.25.1)
   rake (>= 13)
+  rdoc (~> 6.8, >= 6.8.1)
   reek (~> 6.3, >= 6.3.0)
   rspec (~> 3.13)
   rspec-block_is_expected (~> 1.0, >= 1.0.6)

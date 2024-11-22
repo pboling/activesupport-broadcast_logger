@@ -14,6 +14,10 @@ spec/activesupport/broadcast_logger_spec.rb -- 15 warnings:
   [26]:UnusedParameters: CustomLogger#baz has unused parameter 'param' [https://github.com/troessner/reek/blob/v6.3.0/docs/Unused-Parameters.md]
   [30]:UnusedParameters: CustomLogger#qux has unused parameter 'param' [https://github.com/troessner/reek/blob/v6.3.0/docs/Unused-Parameters.md]
   [200]:UnusedParameters: info has unused parameter 'msg' [https://github.com/troessner/reek/blob/v6.3.0/docs/Unused-Parameters.md]
+spec/config/rails_backports.rb -- 3 warnings:
+  [11]:ControlParameter: ActiveSupport::EnumerableCoreExt::Constants#const_missing is controlled by argument 'name' [https://github.com/troessner/reek/blob/v6.3.0/docs/Control-Parameter.md]
+  [7]:IrresponsibleModule: ActiveSupport::EnumerableCoreExt::Constants has no descriptive comment [https://github.com/troessner/reek/blob/v6.3.0/docs/Irresponsible-Module.md]
+  [21]:IrresponsibleModule: Enumerable has no descriptive comment [https://github.com/troessner/reek/blob/v6.3.0/docs/Irresponsible-Module.md]
 lib/activesupport/broadcast_logger.rb -- 7 warnings:
   [79]:Attribute: ActiveSupport::BroadcastLogger#progname is a writable attribute [https://github.com/troessner/reek/blob/v6.3.0/docs/Attribute.md]
   [208, 210, 211, 213]:FeatureEnvy: ActiveSupport::BroadcastLogger#method_missing refers to 'loggers' more than self (maybe move it to another class?) [https://github.com/troessner/reek/blob/v6.3.0/docs/Feature-Envy.md]
@@ -22,4 +26,4 @@ lib/activesupport/broadcast_logger.rb -- 7 warnings:
   [218]:ManualDispatch: ActiveSupport::BroadcastLogger#respond_to_missing? manually dispatches method call [https://github.com/troessner/reek/blob/v6.3.0/docs/Manual-Dispatch.md]
   [183]:TooManyStatements: ActiveSupport::BroadcastLogger#dispatch has approx 7 statements [https://github.com/troessner/reek/blob/v6.3.0/docs/Too-Many-Statements.md]
   [205]:TooManyStatements: ActiveSupport::BroadcastLogger#method_missing has approx 6 statements [https://github.com/troessner/reek/blob/v6.3.0/docs/Too-Many-Statements.md]
-22 total warnings
+25 total warnings
