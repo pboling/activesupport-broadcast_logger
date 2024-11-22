@@ -242,6 +242,7 @@ DEPENDENCIES
   kettle-soup-cover (~> 1.0, >= 1.0.4)
   minitest (~> 5.25, >= 5.25.1)
   rake (>= 13)
+  rdoc (~> 6.8, >= 6.8.1)
   reek (~> 6.3, >= 6.3.0)
   rspec (~> 3.13)
   rspec-block_is_expected (~> 1.0, >= 1.0.6)
