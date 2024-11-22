@@ -50,7 +50,6 @@ Gem::Specification.new do |spec|
   # Extractions from Stdlib (Runtime)
   spec.add_dependency("logger", "~> 1.6", ">= 1.6.1")
   spec.add_dependency("mutex_m", "~> 0.1")
-  spec.add_dependency("rdoc", "~> 6.8", ">= 6.8.1")
   spec.add_dependency("stringio", ">= 0.0.2")
 
   # Runtime Dependencies
