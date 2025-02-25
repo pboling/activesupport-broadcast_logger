@@ -2,7 +2,7 @@
 
 # Get the GEMFILE_VERSION without *require* "my_gem/version", for code coverage accuracy
 # See: https://github.com/simplecov-ruby/simplecov/issues/557#issuecomment-825171399
-load "lib/activesupport/broadcast_logger/version.rb"
+Kernel.load("lib/activesupport/broadcast_logger/version.rb")
 gem_version = Activesupport::BroadcastLogger::Version::VERSION
 Activesupport::BroadcastLogger::Version.send(:remove_const, :VERSION)
 
