@@ -18,3 +18,5 @@ end
 # Linting
 gem "standard", "~> 1.42", ">= 1.42.1" # Ruby >= 3.0
 gem "reek", "~> 6.3", ">= 6.3.0" # Ruby >= 3.0
+
+gem "appraisal", github: "pboling/appraisal", branch: "galtzo"

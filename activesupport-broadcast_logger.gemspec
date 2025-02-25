@@ -2,7 +2,7 @@
 
 # Get the GEMFILE_VERSION without *require* "my_gem/version", for code coverage accuracy
 # See: https://github.com/simplecov-ruby/simplecov/issues/557#issuecomment-825171399
-load "lib/activesupport/broadcast_logger/version.rb"
+Kernel.load("lib/activesupport/broadcast_logger/version.rb")
 gem_version = Activesupport::BroadcastLogger::Version::VERSION
 Activesupport::BroadcastLogger::Version.send(:remove_const, :VERSION)
 
@@ -55,7 +55,10 @@ Gem::Specification.new do |spec|
   # Runtime Dependencies
   spec.add_dependency("activesupport", ">= 5.2")
   spec.add_dependency("activesupport-logger", "~> 2.0", ">= 2.0.3")
-  spec.add_dependency("version_gem", "~> 1.1", ">= 1.1.4")
+  spec.add_dependency("version_gem", "~> 1.1", ">= 1.1.6")
+
+  # Releasing
+  spec.add_development_dependency("stone_checksums", "~> 1.0")
 
   # Documentation
   spec.add_development_dependency("rdoc", "~> 6.8", ">= 6.8.1")
@@ -66,7 +69,8 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency("kettle-soup-cover", "~> 1.0", ">= 1.0.4")
 
   # Unit tests
-  spec.add_development_dependency("appraisal", "~> 2.5")
+  # Targeting a fork of appraisal while thoughtbot works on next release.
+  # spec.add_development_dependency("appraisal", ">= 3")
   spec.add_development_dependency("minitest", "~> 5.25", ">= 5.25.1")
   spec.add_development_dependency("rake", ">= 13")
   spec.add_development_dependency("rspec", "~> 3.13")
