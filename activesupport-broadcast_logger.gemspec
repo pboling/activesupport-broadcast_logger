@@ -55,7 +55,7 @@ Gem::Specification.new do |spec|
   # Runtime Dependencies
   spec.add_dependency("activesupport", ">= 5.2")
   spec.add_dependency("activesupport-logger", "~> 2.0", ">= 2.0.3")
-  spec.add_dependency("version_gem", "~> 1.1", ">= 1.1.4")
+  spec.add_dependency("version_gem", "~> 1.1", ">= 1.1.6")
 
   # Documentation
   spec.add_development_dependency("rdoc", "~> 6.8", ">= 6.8.1")

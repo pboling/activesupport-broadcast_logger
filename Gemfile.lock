@@ -17,6 +17,7 @@ PATH
       logger (~> 1.6, >= 1.6.1)
       mutex_m (~> 0.1)
       stringio (>= 0.0.2)
+      version_gem (~> 1.1, >= 1.1.6)
 
 GEM
   remote: https://rubygems.org/
