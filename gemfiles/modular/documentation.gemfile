@@ -1,0 +1,9 @@
+# frozen_string_literal: true
+
+# Documentation
+# These are in the gemspec
+# gem "yard", "~> 0.9", ">= 0.9.37", :require => false
+# gem "yard-junk", "~> 0.0", ">= 0.0.10"
+
+# Std Lib extractions
+gem "rdoc", "~> 6.11"
